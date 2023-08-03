@@ -1,0 +1,106 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center; /* Középre igazítás függőlegesen */
+  margin: 10px; /* Kisebb margó az elemek között */
+  height: 40px; /* Korlátozott magasság a div-nek */
+}
+
+label {
+  margin-right: 10px; /* Margó a label és az input mező között */
+}
+
+input {
+  width: 50%;
+  height: 30px;
+}
+
+/* Accordion stílusok */
+.accordion-item {
+  max-width: 800px; /* Változtasd meg az értéket az igényeidnek megfelelően */
+  margin: 0 auto; /* Középre igazítás */
+  margin-bottom: 20px;
+  border: 1px solid #292929;
+  border-radius: 5px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 5px; /* Kisebb padding a fejléceknek */
+  background-color: #292929;
+}
+
+.accordion-body {
+  display: none;
+  background-color: #424242;
+  display: flex; /* Flex konténerként kezeljük a tartalmat */
+  flex-direction: column; /* Oszlop irányú elrendezés */
+  align-items: center; /* Középre igazítás vízszintesen */
+  justify-content: center; /* Középre igazítás függőlegesen */
+  max-height: 0; /* Kezdetben a tartalom magassága 0 */
+  overflow: hidden; /* A tartalom láthatóságának korlátozása */
+  transition: max-height 0.2s ease-out; /* Áttűnési animáció */
+  margin: 0; /* Margin kikapcsolása */
+}
+
+/* .show osztály hozzáadása esetén a tartalom megjelenítése */
+.accordion-item.show .accordion-body {
+  max-height: 100%; /* A tartalom maximális magassága */
+  padding: 5px; /* A tartalom megjelenítésekor a padding beállítása */
+}
+
+/* Dark mode stílusok */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode .accordion-header {
+  background-color: #292929;
+}
+
+.dark-mode .accordion-body {
+  background-color: #424242;
+}
+
+.dark-mode input[type="number"] {
+  background-color: #424242;
+  color: #ffffff;
+  border: 1px solid #555555;
+}
+
+.dark-mode button {
+  background-color: #555555;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+

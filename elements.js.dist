@@ -1,0 +1,30 @@
+const Elements = [
+  {
+    title: 'Toborzás átadás',
+    description: '3 ID-t kell megadni, az első annak a toborzásnak az ID-ja amit akarunk átadni, a második pedig annak a felhasználónak az ID-ja akihez szeretnénk hozzárendelni ezt a toborzást.',
+    sql: `UPDATE recruitment 
+    SET created_by_id = '$v2', updated_by_id = '$v2' 
+    WHERE id = '$v1'`,
+    variable_number: 2,
+          labels: ['ksicica', 'almafa'],
+  },
+  {
+    title: 'Jelölt Inaktiválás (törlés)',
+    description: 'Jelölt inaktiválása egy adott toborzásból, az application.id megadása szükséges',
+    sql: `UPDATE applicant
+    INNER JOIN application ON application.applicant_id = applicant.id
+    SET enabled = 0, privacy_policy_accepted = 0
+    WHERE application.id = '$v1'`,
+    variable_number: 1,
+          labels: ['ksicica'],
+  },
+];
+
+// Hozzáadjuk az ID-kat az accordion elemekhez
+Elements.forEach((item, index) => {
+  item.id = `query${index + 1}`;
+});
+
+module.exports = Elements;
+
+
