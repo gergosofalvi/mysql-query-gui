@@ -43,4 +43,23 @@ The application includes a Dockerfile and a docker-compose.yml file.
 
 ## Acknowledgment
 
-The development of this application was greatly assisted by OpenAI's ChatGPT, an AI langu
+The development of this application was greatly assisted by OpenAI's ChatGPT, an AI language model, which provided solutions and insights during the creation process.
+
+## Contributing
+
+Contributions to this project are welcome. To contribute, please follow these steps:
+1. Fork the repository on GitHub.
+2. Create a new branch with a descriptive name (`git checkout -b feature/your-feature-name`).
+3. Make your changes and commit them (`git commit -m "Add your commit message"`).
+4. Push your changes to your forked repository (`git push origin feature/your-feature-name`).
+5. Create a pull request on the main repository to merge your changes.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Contact
+
+If you have any questions or feedback, feel free to contact the project maintainer via email at [maintainer@example.com](mailto:maintainer@example.com).
+
+Enjoy using the Database Administration Web Application!
