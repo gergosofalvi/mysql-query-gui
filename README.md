@@ -25,6 +25,15 @@ This web application provides an intuitive interface for database administration
 
 2. The application will be available at `http://localhost:3111`.
 
+3. Login screen.
+![Login screen](images/database-gui1.png)
+
+4. After login
+![Database GUI 2](images/database-gui2.png)
+![Database GUI 3](images/database-gui3.png)
+![Database GUI 4](images/database-gui4.png)
+![Database GUI 5](images/database-gui5.png)
+
 ## Usage
 
 1. On the homepage, you will find a list of available queries organized in accordion-style elements.
